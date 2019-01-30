@@ -1,12 +1,13 @@
 package SpecifinioFailoSkaitymas;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class SpecifinioFailoSkaitymas {
     public static void main(String[] args) {
-        String duomenys = "C:\\Users\\Dziugas\\Desktop\\java objektinio pagrindai\\2sprintas\\src\\SpecifinioFailoSkaitymas\\Duomenys.txt";
+        String duomenys = new File("").getAbsolutePath() + "\\src\\SpecifinioFailoSkaitymas\\Duomenys.txt";
         Zmogus[] objektuMasyvas = skaityti(duomenys);
         for(int i = 0; i < objektuMasyvas.length; i++) {
             System.out.println(objektuMasyvas[i].toString());

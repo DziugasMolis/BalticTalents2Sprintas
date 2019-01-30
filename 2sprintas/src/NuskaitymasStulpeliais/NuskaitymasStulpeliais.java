@@ -5,12 +5,12 @@ import java.util.Arrays;
 
 public class NuskaitymasStulpeliais {
     public static void main(String[] args) {
-    String duomenys = "C:\\Users\\Dziugas\\Desktop\\java objektinio pagrindai\\2sprintas\\src\\NuskaitymasStulpeliais\\Duomenys.txt";
-    String atsakymai = "C:\\Users\\Dziugas\\Desktop\\java objektinio pagrindai\\2sprintas\\src\\NuskaitymasStulpeliais\\Atsakymai.txt";
-    String[] vardai = new String[0];
-    String[] pavardes = new String[0];
-    Integer[] amziai = new Integer[0];
-    String[] profesijos = new String[0];
+    String duomenys = "C:\\Users\\Dziugas\\Desktop\\java objektinio pagrindai\\BalticTalents2Sprintas\\2sprintas\\src\\NuskaitymasStulpeliais\\Duomenys.txt";
+    String atsakymai = "C:\\Users\\Dziugas\\Desktop\\java objektinio pagrindai\\BalticTalents2Sprintas\\2sprintas\\src\\NuskaitymasStulpeliais\\Atsakymai.txt";
+    String[] vardai = null;
+    String[] pavardes = null;
+    Integer[] amziai = null;
+    String[] profesijos = null;
 
     skaityti(duomenys, vardai, pavardes, amziai, profesijos);
     rasyti(atsakymai, vardai, pavardes, amziai, profesijos);
