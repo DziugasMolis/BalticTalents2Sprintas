@@ -1,0 +1,3 @@
+Antro masyvo vidurkis didesnis
+Antras masyvas turi daugiau skaiciu didesniu uz vidurki
+12 2 5 42 11 2 3 6 5 0 

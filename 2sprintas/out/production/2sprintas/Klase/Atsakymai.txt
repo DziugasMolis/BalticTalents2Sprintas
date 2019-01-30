@@ -1,0 +1,3 @@
+Vardas: Jonas Pavarde: Jonaitis Klase: 5 Pazymiu masyvas: [Ljava.lang.Integer;@4554617c
+Vardas: Petras Pavarde: Petraitis Klase: 6 Pazymiu masyvas: [Ljava.lang.Integer;@74a14482
+Vardas: Andrius Pavarde: Jonaitis Klase: 5 Pazymiu masyvas: [Ljava.lang.Integer;@1540e19d

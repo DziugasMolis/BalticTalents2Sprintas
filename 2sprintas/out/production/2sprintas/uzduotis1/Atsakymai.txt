@@ -1,0 +1,26 @@
+1 uzduotis
+1 2 3 4 5 6 7 8 9 10 11 12 
+-------------------
+2 uzduotis
+Suma = 3.0
+-------------------
+3 uzduotis
+Skaicius = 1 yra nera lyginis
+Skaicius = 2 yra lyginis
+Skaicius = 3 yra nera lyginis
+Skaicius = 4 yra lyginis
+Skaicius = 5 yra nera lyginis
+Skaicius = 6 yra lyginis
+Skaicius = 7 yra nera lyginis
+Skaicius = 8 yra lyginis
+Skaicius = 9 yra nera lyginis
+Skaicius = 10 yra lyginis
+Skaicius = 11 yra nera lyginis
+Skaicius = 12 yra lyginis
+-------------------
+4 uzduotis
+Vidurkis = 6.5
+-------------------
+5 uzduotis
+Minimumas = 1
+-------------------
