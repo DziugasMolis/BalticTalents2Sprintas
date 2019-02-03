@@ -1,0 +1,1 @@
+Perimetras = 8.0 Plotas = 4.0Perimetras = 16.0 Plotas = 16.0Perimetras = 11.0 Plotas = 6.0Perimetras = 16.0 Plotas = 16.0Perimetras = 12.0 Plotas = 9.0Perimetras = 24.0 Plotas = 36.0Perimetras = 57.0 Plotas = 48.0

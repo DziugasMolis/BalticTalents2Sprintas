@@ -9,6 +9,7 @@ public class PagrindineKlase {
         System.out.println (filePath);
         Animal gyvunas = new Animal();
         Dog suo = new Dog();
+        Dog suo1 = new Dog("Auauauauaua");
         Cat kate = new Cat();
 
         System.out.println(gyvunas.toString());

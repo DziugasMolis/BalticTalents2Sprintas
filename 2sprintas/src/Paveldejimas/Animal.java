@@ -3,6 +3,12 @@ package Paveldejimas;
 public class Animal {
     private String klase = "tevine";
 
+    public Animal() {
+
+    }
+    public Animal(String klase) {
+        this.klase = klase;
+    }
     @Override
     public String toString() {
         return getKlase();
