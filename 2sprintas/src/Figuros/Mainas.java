@@ -6,14 +6,25 @@ public class Mainas {
     public static void main(String[] args) {
         String Duomenys = new File("").getAbsolutePath() + "\\src\\Figuros\\Duomenys.txt";
         String Atsakymai = new File("").getAbsolutePath() + "\\src\\Figuros\\Rezultatai.txt";;
-        Figura[] objektuMasyvas = skaityti(Duomenys);
+        Figuros objektuMasyvas = skaityti(Duomenys);
+        System.out.println(objektuMasyvas.didziausiasPerimetras().toString());
+        didziausias(objektuMasyvas);
         rasyti(Atsakymai, objektuMasyvas);
     }
 
-    public static Figura[] skaityti(String failas) {
-        Figura[] objektuMasyvas = new Figura[7];
+    public static void didziausias(Figuros objektuMasyvas) {
+
+        for(int i = 0; i < objektuMasyvas.getFiguruMasyvas().length; i++) {
+            System.out.println(objektuMasyvas.getFiguruMasyvas()[i].perimetras());
+        }
+
+
+    }
+
+    public static Figuros skaityti(String failas) {
+        Figuros objektai = new Figuros();
         String[] objektas = null;
-        Integer eilutesIndeksas = 0;
+//        Integer eilutesIndeksas = 0;
         try (BufferedReader br = new BufferedReader(new FileReader(failas))) {
             String line = br.readLine();
             while (line != null) {
@@ -21,14 +32,17 @@ public class Mainas {
                 Figura obj = new Figura();
                 if (objektas.length == 1) {
                     obj = new Kvadratas(Double.parseDouble(objektas[0]));
+                    objektai.pridetiFigura(obj);
                 } else if (objektas.length == 2) {
                     obj = new Staciakampis(Double.parseDouble(objektas[0]), Double.parseDouble(objektas[1]));
+                    objektai.pridetiFigura(obj);
                 } else {
                     obj = new StaciakampisTrikampis(Double.parseDouble(objektas[0]),
                             Double.parseDouble(objektas[1]), Double.parseDouble(objektas[2]));
+                    objektai.pridetiFigura(obj);
                 }
-                objektuMasyvas[eilutesIndeksas] = obj;
-                eilutesIndeksas++;
+//                objektuMasyvas[eilutesIndeksas] = obj;
+//                eilutesIndeksas++;
                 line = br.readLine();
             }
         } catch (FileNotFoundException ex) {
@@ -36,12 +50,12 @@ public class Mainas {
         } catch (Exception e) {
             System.out.println("something else went wrong");
         }
-        return objektuMasyvas;
+        return objektai;
     }
-    public static void rasyti(String failas, Figura[] figuruMasyvas) {
+    public static void rasyti(String failas, Figuros figuruMasyvas) {
         try (BufferedWriter output = new BufferedWriter(new FileWriter(failas))) {
-            for(int i = 0; i < figuruMasyvas.length; i++) {
-                output.write(figuruMasyvas[i].toString()+"\n");
+            for(int i = 0; i < figuruMasyvas.getFiguruMasyvas().length; i++) {
+                output.write(figuruMasyvas.getFiguruMasyvas()[i].toString()+"\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
