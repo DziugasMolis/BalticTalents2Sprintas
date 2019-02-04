@@ -8,6 +8,11 @@ public class Trikampis extends Figura {
     }
 
     @Override
+    public String toString() {
+        return "Trikampis Perimetras = " + Perimetas() + " Plotas = " + Plotas() + "\n";
+    }
+
+    @Override
     public Double Perimetas() {
         return krastine * 3;
     }

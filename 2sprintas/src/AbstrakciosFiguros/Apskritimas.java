@@ -8,6 +8,11 @@ public class Apskritimas extends Figura {
     }
 
     @Override
+    public String toString() {
+        return "Apskritimo Perimetras = " + Perimetas() + " Plotas = " + Plotas() + "\n";
+    }
+
+    @Override
     public Double Perimetas() {
         return 2 * Math.PI * spindulys;
     }

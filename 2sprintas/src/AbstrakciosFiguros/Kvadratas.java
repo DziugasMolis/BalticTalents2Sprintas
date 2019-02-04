@@ -8,6 +8,11 @@ public class Kvadratas extends Figura {
     }
 
     @Override
+    public String toString() {
+        return "Kvadratas Perimetras = " + Perimetas() + " Plotas = " + Plotas() + "\n";
+    }
+
+    @Override
     public Double Perimetas() {
         return krastine * 4;
     }
