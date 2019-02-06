@@ -1,6 +1,6 @@
 package Figuros;
 
-public class Kvadratas extends Figura {
+public class Kvadratas extends Figura implements KvadratoSkaiciavimai {
     private Double krastine;
 
     public Kvadratas(Double krastine) {
@@ -11,13 +11,13 @@ public class Kvadratas extends Figura {
         this.krastine = 0.0;
     }
 
-    public Double perimetras() {
-        return 4 * krastine;
-    }
-
-    public Double plotas() {
-        return Math.pow(krastine, 2);
-    }
+//    public Double perimetras() {
+//        return 4 * krastine;
+//    }
+//
+//    public Double plotas() {
+//        return Math.pow(krastine, 2);
+//    }
 
     @Override
     public String toString() {

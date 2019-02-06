@@ -6,10 +6,13 @@ public class Mainas {
     public static void main(String[] args) {
         String Duomenys = new File("").getAbsolutePath() + "\\src\\Figuros\\Duomenys.txt";
         String Atsakymai = new File("").getAbsolutePath() + "\\src\\Figuros\\Rezultatai.txt";;
-        Figuros objektuMasyvas = skaityti(Duomenys);
-        System.out.println(objektuMasyvas.didziausiasPerimetras().toString());
-        didziausias(objektuMasyvas);
-        rasyti(Atsakymai, objektuMasyvas);
+//        Figuros objektuMasyvas = skaityti(Duomenys);
+//        System.out.println(objektuMasyvas.didziausiasPerimetras().toString());
+//        didziausias(objektuMasyvas);
+//        rasyti(Atsakymai, objektuMasyvas);
+        Kvadratas kvad = new Kvadratas(2d);
+        kvad.perimetras();
+        kvad.perimetras(kvad.getKrastine());
     }
 
     public static void didziausias(Figuros objektuMasyvas) {

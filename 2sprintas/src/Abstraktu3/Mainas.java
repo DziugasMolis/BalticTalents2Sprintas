@@ -21,7 +21,7 @@ public class Mainas {
             while (line != null) {
                 objektas = line.split(" ");
                 Zmogus obj = null;
-                if (objektas[0] == "S") {
+                if (objektas[0].equals("S")) {
                     obj = new Studentas(objektas[1], objektas[2], Integer.parseInt(objektas[3]),
                             Integer.parseInt(objektas[4]), objektas[5]);
                 } else {

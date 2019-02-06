@@ -8,3 +8,4 @@ Vardas: Stasys Pavarde: Stasiukas Amzius: 33 Patirtis: 2 Specialybe: Vadyba
 
 Vardas: Jogaile Pavarde: Mirune Amzius: 26 Patirtis: 3 Specialybe: Odontologija
 
+Vyriausias Vardas: Stasys Pavarde: Stasiukas Amzius: 33 Patirtis: 2 Specialybe: Vadyba
