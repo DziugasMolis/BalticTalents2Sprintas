@@ -32,7 +32,7 @@ public class Main {
                 return atlyginimas * 1.1;
             }
         };
-
+        ab.paskaiciuotiAtlyginima(e1.getAtlyginimas());
         Abstrakti ab2 = new Abstrakti() {
             @Override
             void Spausdinti() {
