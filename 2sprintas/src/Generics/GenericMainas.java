@@ -1,5 +1,7 @@
 package Generics;
 
+import SortObjects.Person;
+
 import java.util.HashMap;
 
 import static com.sun.org.apache.bcel.internal.classfile.Utility.printArray;
@@ -50,6 +52,16 @@ public class GenericMainas {
         String[] arrStr = {"bbb", "abc", "ABC", "B", "C", "ccccc", "dd"};
         selectionSort(arrStr);
         atspausdinti(arrStr);
+
+
+        Generics.Person p1 = new Generics.Person("Test1",10);
+        Generics.Person p2 = new Generics.Person("Test2",12);
+        Generics.Person p3 = new Generics.Person("Test3",4);
+        Generics.Person p4 = new Generics.Person("Test4",7);
+
+        Generics.Person[] ArrayOfPersons = {p1,p2,p3,p4};
+        selectionSort(ArrayOfPersons);
+        atspausdinti(ArrayOfPersons);
     }
 
     public static <E> void atspausdinti( E[] inputArray ) {
