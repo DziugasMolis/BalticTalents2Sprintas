@@ -3,6 +3,7 @@ package Interfeisai;
 public interface Mokejimas {
     String bankoSaskaita();
     String saskaitosTuretojas();
+
     default Double suma(Double skaicius1, Double skaicius2) {
         return skaicius1 + skaicius2;
     }

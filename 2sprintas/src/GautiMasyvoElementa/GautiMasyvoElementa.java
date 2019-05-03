@@ -33,10 +33,11 @@ public class GautiMasyvoElementa {
 
     public static void parseKlaida() {
         try {
-            String str = "12s3";
+            String str = null;
             double num = Double.parseDouble(str);
             System.out.println("try block fully executed");
         } catch (NumberFormatException ex) {
+            System.out.println(ex);
             System.out.println("catch block executed...");
 
         } finally {
